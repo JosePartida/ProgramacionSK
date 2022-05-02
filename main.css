@@ -1,3 +1,10 @@
 body{
 	background-color: yellow;
 }
+.cuadro{
+	width: 500px;
+	height: 300px;
+	border-radius: 15px;
+	padding-left: 20px;
+	background-color: red;
+}
