@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabla Apex</title>
+</head>
+<body>
+	<tr>
+		<td>
+			<th>Nombre</th>
+			<th>Leyenda</th>
+			<th>Mundo Natal</th>
+			<th>Habilidad Tactica</th>
+			<th>Habilidad Pasiva</th>
+			<th>Habilidad Definitiva</th>
+		</td>
+	</tr>
+    <script>
+    	$(document).ready(function(){
+    		$.getJSON("apex.json", function(data){
+    			var apex='';
+    			$.each(data, function(key, value){
+    			    apex+='<td>';
+    			    apex+='<td>' +value.Nombre + '</td>';
+    			    apex+='<td>' +value.Leyenda + '</td>';
+    			    apex+='<td>' +value.Mundo Natal + '</td>';
+    			    apex+='<td>' +value.Habilidad Tactica + '</td>';
+    			    apex+='<td>' +value.Habilidad Pasiva + '</td>';	
+    			    apex+='<td>' +value.Habilidad Definitiva + '</td>';
+    			});
+    		});
+    	});
+    </script>
+
+</body>
+</html>
